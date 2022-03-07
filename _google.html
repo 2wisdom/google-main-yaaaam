@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Apple SD Gothic Neo, arial, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        head .space {
+            flex: 1;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            padding: 6px;
+        }
+
+        header a {
+            padding: 5px;
+            margin: 0 5px;
+            color: #202124;
+            font-size: 14px;
+        }
+
+        header a:hover {
+            text-decoration: underline;
+        }
+
+        header a:first-of-type {
+            margin-left: 15px;
+        }
+
+        header .header-icon {
+            width: 40px;
+            height: 40px;
+            padding: 8px;            
+        }
+        header .header-icon svg {
+            color: #5f6368;
+        }
+
+        header .avatar {
+            width: 40px;
+            height: 40px;
+            padding: 4px;            
+        }
+
+        header .avatar img {
+            width: 100%;
+            height: 100%;
+            border-radius: 40px;
+        }
+
+        /* ============= main =========== */
+        main {
+
+        }
+
+        main .logo {
+            display: block;
+            margin: 198px auto 0 auto;            
+        }
+
+        main .search-input-wrapper {
+            width: 584px;
+            height: 46px;
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+            margin: auto;
+            padding: 1px 14px;         
+            display: flex;  
+            align-items: center;
+        }
+
+        main .search-input-wrapper input {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border: 0;
+            color: rgba(0,0,0,.87);
+            font-size: 16px;
+        }
+
+        main .search-input-wrapper .search-icon-wrapper {
+            width: 20px;
+            height: 20px;
+            margin-right: 14px;
+        }
+
+        main .search-input-wrapper .search-icon-wrapper svg {
+            width: 20px;
+            height: 20px;
+            color: #9aa0a6;
+        }
+
+        main .search-input-wrapper .search-icon-wrapper svg path {
+            width: 20px;
+            height: 20px;
+            color: #9aa0a6;
+        }
+
+        main .mic {
+            height: 24px;
+            width: 24px;
+            vertical-align: middle;
+        }   
+
+        main .key {
+            background: url(https://www.gstatic.com/inputtools/images/tia.png)
+            height: 24px;
+            width: 24px;
+            vertical-align: middle;
+            padding-left: 8px;
+            padding-right:8px;
+        }
+
+        main .actions {
+            text-align: center;
+            margin-top: 29px;
+        }
+        main .actions button {
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            border-radius: 4px;
+            color: #3c4043;
+            font-size: 14px;
+            padding: 0 16px;
+            height: 36px;
+        }
+
+        main .actions button:hover {
+            box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+            background-color: #f8f9fa;
+            border: 1px solid #dadce0;
+            color: #202124;
+        }
+
+        /* ============= footer =========== */
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background-color: #f2f2f2;
+            color: #70757a;
+            font-size: 15px;
+        }
+
+        footer .half {
+            height: 50%;
+        }
+
+        footer a {
+            padding: 15px;
+            color: #70757a;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer .half:first-of-type {
+            border-bottom: 1px solid #dadce0;
+            display: flex;
+            align-items: center;
+            padding: 15px 30px;
+        }
+
+        footer .half:nth-of-type(2) {   
+            display: flex;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        footer .space {
+            flex: 1;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <a href="">Google 정보</a>
+        <a href="">스토어</a>
+        <span class="space"></span>
+        <a href="">Gmail</a>
+        <a href="">이미지</a>        
+        <div class="header-icon">
+            <svg class="gb_Se" focusable="false" viewBox="0 0 24 24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path></svg>
+        </div>        
+        <a href="" class="avatar">
+            <img src="https://lh3.googleusercontent.com/ogw/ADea4I4DF_l92FUft-Iz9b10PPXvnEZxutuJh9XMvQ0K=s32-c-mo" alt="" />
+        </a>
+    </header>
+
+    <main>
+        <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="" />      
+        <div class="search-input-wrapper">
+            <div class="search-icon-wrapper">
+                <svg class="search-icon" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+            </div>            
+            <input type="text"/>
+            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+            <img class="key" src="https://www.gstatic.com/inputtools/images/tia.png" tia_disable_swap="true" tia_field_name="q" jsname="JyIpdf" data-iml="1646653539046" data-atf="0" data-frt="0" tia_property="web">
+            <svg class="mic" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#4285f4" d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z"></path><path fill="#34a853" d="m11 18.08h2v3.92h-2z"></path><path fill="#fbbc05" d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z"></path><path fill="#ea4335" d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z"></path></svg>
+        </div>
+        <div class="actions">
+            <button>Google 검색</button>
+            <button>I'm Feeling Lucky</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="half">
+            대한민국
+        </div>        
+        <div class="half">
+            <div class="half-left">
+                <a href="">광고</a>
+                <a href="">비즈니스</a>
+                <a href="">검색의 원리</a>
+            </div>
+            <span class="space"></span>
+            <div class="half-right">
+                <a href="">개인정보처리방침</a>
+                <a href="">약관</a>
+                <a href="">설정</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
